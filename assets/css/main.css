@@ -3933,3 +3933,15 @@ input, select, textarea {
 			}
 
 		}
+#animation{
+	
+		animation: rotate-center 1.4s ease-in-out infinite both !important;
+	}
+	@keyframes rotate-center {
+		0% {
+		  transform: rotate(0);
+		}
+		100% {
+		  transform: rotate(360deg);
+		}
+	}
