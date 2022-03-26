@@ -1,4 +1,5 @@
 @import url(fontawesome-all.min.css);
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap');
 
 /*
 	Hyperspace by HTML5 UP
@@ -3524,7 +3525,7 @@ input, select, textarea {
 
 	#sidebar {
 		padding: 2.5em 2.5em 0.5em 2.5em ;
-		background: #312450;
+		background: black;
 		cursor: default;
 		height: 100vh;
 		left: 0;
@@ -3737,7 +3738,6 @@ input, select, textarea {
 			-ms-transition: color 0.2s ease;
 			transition: color 0.2s ease;
 			border: 0;
-			color: rgba(255, 255, 255, 0.35);
 			display: block;
 			font-size: 0.6em;
 			font-weight: bold;
@@ -3748,6 +3748,8 @@ input, select, textarea {
 			position: relative;
 			text-decoration: none;
 			text-transform: uppercase;
+			transition: ease-in-out 0.7s;
+			font-family: 'Libre Baskerville', serif;
 		}
 
 			#sidebar nav a:before, #sidebar nav a:after {
@@ -3761,7 +3763,7 @@ input, select, textarea {
 			}
 
 			#sidebar nav a:before {
-				background: #3c2c62;
+				background: black;
 			}
 
 			#sidebar nav a:after {
@@ -3777,11 +3779,12 @@ input, select, textarea {
 			}
 
 			#sidebar nav a:hover {
-				color: rgba(255, 255, 255, 0.55);
+				color: white;
+				font-size: 12px;
 			}
 
 			#sidebar nav a.active {
-				color: #ffffff;
+				color: gold;
 			}
 
 				#sidebar nav a.active:after {
@@ -3853,11 +3856,12 @@ input, select, textarea {
 						height: inherit;
 						line-height: inherit;
 						padding: 0;
+						color: white;
 					}
 
 						#sidebar nav a:after {
 							background-image: none;
-							background-color: #b74e91;
+							background-color: gold;
 						}
 
 		}
