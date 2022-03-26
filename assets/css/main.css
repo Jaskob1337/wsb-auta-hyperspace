@@ -70,6 +70,41 @@ input, select, textarea {
 	-ms-appearance: none;
 	appearance: none;
 }
+#two{
+	background-color: #ffd700;
+	color: black;
+}
+.innerTwo{
+	border: 1px solid black;
+}
+.innerTwo section{
+	
+	border-bottom: 1px solid black;
+	
+}
+.features{
+	border: 1px solid black !important;
+}
+
+.whatWeDo{
+	text-align: center;
+	color: black;
+}
+
+
+.whatWeDoP{
+text-align: justify;
+font-style: italic;
+}
+.features h3{
+	text-align: center;
+	color: black;
+	
+}
+.buttonInTwo {
+	color: black; 
+}
+
 
 /* Basic */
 
@@ -1852,6 +1887,10 @@ input, select, textarea {
 		white-space: nowrap;
 	}
 
+	
+
+	
+
 		input[type="submit"]:after,
 		input[type="reset"]:after,
 		input[type="button"]:after,
@@ -1876,6 +1915,37 @@ input, select, textarea {
 			top: 0;
 			width: 100%;
 		}
+		.buttonInTwo {
+			color: black !important; 
+			border: 1px solid black !important ;
+			
+		}
+		.buttonInTwo:hover{
+			background-color:#ad9300 ;
+			animation: spinButtonInTwo 5s linear infinite;
+			transition: 2s;
+		
+		}
+		@keyframes spinButtonInTwo{
+			0%{transform: rotate(0deg);
+                margin-left: 0%;
+			}
+			25%{
+				transform: rotate(100deg);
+                margin-left: 20%;
+			}
+			50%{
+				transform: rotate(200deg);
+                margin-left: 25%;
+			}
+			80%{
+				transform: rotate(300deg);
+                margin-left: 20%;
+			}
+			100%{transform: rotate(360deg);
+				margin-left: 0%}
+		}
+      
 
 		input[type="submit"].icon:before,
 		input[type="reset"].icon:before,
@@ -1975,6 +2045,7 @@ input, select, textarea {
 				.button:hover:active:after {
 					opacity: 0.1;
 				}
+				
 
 /* Features */
 
