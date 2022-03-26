@@ -1818,10 +1818,26 @@ input, select, textarea {
 
 /* Button */
 
+
+
 	input[type="submit"],
 	input[type="reset"],
 	input[type="button"],
 	button,
+	.buttonRotate{
+		color: black !important;
+	}
+	.buttonRotate:hover{
+		animation: rotate-center 1.4s ease-in-out infinite both !important;
+	}
+	@keyframes rotate-center {
+		0% {
+		  transform: rotate(0);
+		}
+		100% {
+		  transform: rotate(360deg);
+		}
+	}
 	.button {
 		-moz-appearance: none;
 		-webkit-appearance: none;
@@ -2988,6 +3004,7 @@ input, select, textarea {
 /* Spotlights */
 
 	.spotlights > section {
+		
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
@@ -3010,14 +3027,17 @@ input, select, textarea {
 			display: block;
 			position: relative;
 			width: 25em;
+			
 		}
 
 			.spotlights > section > .image img {
 				border-radius: 0;
 				display: block;
+				
 			}
 
 			.spotlights > section > .image:before {
+				
 				-moz-transition: opacity 1s ease;
 				-webkit-transition: opacity 1s ease;
 				-ms-transition: opacity 1s ease;
@@ -3034,6 +3054,8 @@ input, select, textarea {
 			}
 
 		.spotlights > section > .content {
+			
+			background-color:  #ffd700;
 			padding: 4em 5em 2em 5em ;
 			display: -moz-flex;
 			display: -webkit-flex;
@@ -3052,6 +3074,7 @@ input, select, textarea {
 		}
 
 			.spotlights > section > .content > .inner {
+				
 				-moz-transform: translateX(0) translateY(0);
 				-webkit-transform: translateX(0) translateY(0);
 				-ms-transform: translateX(0) translateY(0);
@@ -3062,6 +3085,7 @@ input, select, textarea {
 				transition: opacity 1s ease, transform 1s ease;
 				opacity: 1;
 			}
+			
 
 		.spotlights > section:nth-child(2) {
 			background-color: rgba(0, 0, 0, 0.05);
@@ -3206,6 +3230,8 @@ input, select, textarea {
 	}
 
 		.wrapper > .inner {
+			color: black;
+			background-color: #ffd700;
 			padding: 5em 5em 3em 5em ;
 			max-width: 100%;
 			width: 75em;
